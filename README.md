@@ -75,7 +75,7 @@ pip install .
 python3 -m nmap_report samples/scan-2026-11-15.xml
 ```
 
-Requires Python 3.9+.
+Requires Python 3.10+.
 
 ## Usage
 

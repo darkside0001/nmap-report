@@ -9,7 +9,7 @@ description = "Turn nmap XML into readable reports, flag risky exposed services 
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Razim Kudaybergenov" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = []
 keywords = ["security", "nmap", "network-scanning", "attack-surface", "reporting", "blue-team"]
 
