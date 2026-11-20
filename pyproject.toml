@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nmap-report"
+version = "1.0.0"
+description = "Turn nmap XML into readable reports, flag risky exposed services and diff scans over time"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Razim Kudaybergenov" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["security", "nmap", "network-scanning", "attack-surface", "reporting", "blue-team"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+nmap-report = "nmap_report.cli:main"
+
+[tool.setuptools]
+packages = ["nmap_report"]
