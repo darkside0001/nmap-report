@@ -47,7 +47,7 @@ def to_text(scan: Scan, risks: list[Risk], d: ScanDiff | None = None) -> str:
         out.append("RISKS")
         for k in risks:
             out.append(f"  [{k.rule.severity.upper():<8}] {k.host.name:<38} {k.port.key:<10} {k.rule.title}")
-            out.append(f"{"":13}{k.rule.fix}")
+            out.append(" " * 13 + k.rule.fix)
         out.append("")
     if d is not None:
         out += [diff_to_text(d), ""]
